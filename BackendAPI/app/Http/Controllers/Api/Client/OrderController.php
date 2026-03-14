@@ -35,12 +35,9 @@ class OrderController extends Controller
                 'total_amount'     => $validated['total_amount'],
                 'status'           => 'pending_payment',
                 'payment_method'   => 'bakong_khqr',
-
-                // 👇 THE FIX: Provide default values for required columns
                 'delivery_address' => 'Store Pickup',
                 'transaction_ref'  => null,
                 'note'             => null,
-                'receipt_image'    => null, // No longer used in this flow
             ]);
 
             // 3. Create Order Items

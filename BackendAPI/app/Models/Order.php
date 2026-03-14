@@ -17,7 +17,6 @@ class Order extends Model
         'transaction_ref', // Bakong ID
         'delivery_address',
         'note',
-        'receipt_image'
     ];
 
     // Relationship: Who bought this?
