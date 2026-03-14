@@ -14,7 +14,9 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware) {
 
-        // 👇 PASTE THIS SECTION HERE 👇
+        // ✅ CORS must be prepended FIRST before any other middleware
+        $middleware->prepend(\Illuminate\Http\Middleware\HandleCors::class);
+
         $middleware->alias([
             'admin' => EnsureIsAdmin::class,
         ]);
