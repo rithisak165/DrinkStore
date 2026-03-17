@@ -370,10 +370,10 @@ export default function Menu() {
 
             {/* --- PRODUCT DETAIL MODAL --- */}
             {isModalOpen && selectedProduct && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+                <div className="fixed inset-0 z-[60] flex items-center justify-center p-4">
                     <div className="absolute inset-0 bg-gray-900/60 backdrop-blur-md transition-opacity" onClick={closeModal}></div>
                     
-                    <div className="relative bg-white rounded-3xl shadow-2xl w-full max-w-4xl overflow-hidden flex flex-col md:flex-row animate-fadeIn max-h-[90vh]">
+                    <div className="relative bg-white rounded-3xl shadow-2xl w-full max-w-4xl overflow-hidden flex flex-col md:flex-row animate-modalFade max-h-[90vh]">
                         
                         {/* Modal Image Side */}
                         <div className="w-full md:w-1/2 h-64 md:h-auto bg-gray-100 relative">
@@ -386,7 +386,7 @@ export default function Menu() {
                         </div>
 
                         {/* Modal Content Side */}
-                        <div className="w-full md:w-1/2 p-8 flex flex-col bg-white overflow-y-auto">
+                        <div className="w-full md:w-1/2 p-4 sm:p-6 md:p-8 pb-24 md:pb-8 flex flex-col bg-white overflow-y-auto">
                             <div className="flex justify-between items-start mb-4">
                                 <div>
                                     <h2 className="text-3xl font-black text-gray-900 leading-tight">{selectedProduct.name}</h2>
@@ -414,7 +414,9 @@ export default function Menu() {
                                                         <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${isSelected ? 'border-amber-500' : 'border-gray-300'}`}>
                                                             {isSelected && <div className="w-2.5 h-2.5 rounded-full bg-amber-500" />}
                                                         </div>
-                                                        <span className={`font-bold ${isSelected ? 'text-gray-900' : 'text-gray-600'}`}>{size.size}</span>
+                                                        <span className={`font-bold ${isSelected ? 'text-gray-900' : 'text-gray-600'}`}>
+                                                            {size.size === 'Meduim' ? 'Medium' : size.size}
+                                                        </span>
                                                     </div>
                                                     <span className={`font-bold text-lg relative z-10 ${isSelected ? 'text-amber-600' : 'text-gray-400'}`}>${size.price}</span>
                                                 </div>

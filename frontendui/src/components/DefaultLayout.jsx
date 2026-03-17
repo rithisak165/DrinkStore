@@ -118,7 +118,7 @@ export default function DefaultLayout() {
             </nav>
 
             {/* MAIN CONTENT */}
-            <main className={`relative z-0 pt-20 min-h-screen pb-24 md:pb-10
+            <main className={`relative pt-20 min-h-screen pb-24 md:pb-10
                 ${isHome ? 'w-full' : 'container mx-auto px-4'}`}>
                 <Outlet />
             </main>
