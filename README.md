@@ -3,7 +3,19 @@
 ## 🚀 Overview
 The Drink Store POS System is a fullstack web application designed to manage a real-world drink store business. It provides functionality for product management, order processing, and payment handling.
 
-This system simulates a real production environment with role-based access control, admin dashboard, and business logic for store operations.
+This system is designed to reflect a real-world production environment, featuring scalable architecture, role-based access control, and business logic commonly used in retail POS systems.
+
+---
+
+## 🌐 Live Demo
+
+🚀 [View POS System Demo](https://final-portfolio-rho-ten.vercel.app/portfolio)
+
+---
+
+## 🎥 Demo Video
+
+📺 The full demo video is available inside the live demo above.
 
 ---
 
@@ -59,3 +71,9 @@ This system simulates a real production environment with role-based access contr
 - Styling: Tailwind CSS  
 
 ---
+
+## 💡 Why I Built This
+
+This project was built to solve real business problems in small drink stores, including order management, payment tracking, and store operation control.
+
+It demonstrates my ability to design and develop fullstack applications with real-world use cases, scalable architecture, and clean system logic.
